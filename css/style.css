@@ -81,7 +81,7 @@ nav a.active {
 /* Styles defined earlier */
 
 /* Responsive styles for smaller screens using a media query */
-@media screen and (max-width: 889px) {
+@media screen{
     nav a {
         /* Reduces padding on smaller screens to save space */
         padding: 8px 12px;
@@ -103,12 +103,72 @@ nav a.active {
 .image-grid{
     display: grid; 
     grid-template-columns:1fr 1fr ; 
-   
-    }
+    grid-column-start: 1;
+    grid-column-end: -1;}
 @media screen and (min-width: 760px) {
     .image-grid{
         grid-template-columns: 45% 45%;
-        grid: gap 20px;
+        grid-gap: 20px;
+        padding: 30px;
     }
     
 }
+.current{
+    font-weight: 750;
+    color: rgb(45, 43, 43);
+    background-color: #7aa9db;
+
+}
+/* Image Grid Container for Glendalough */
+#glendaloughPics .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr)); /* 2 columns with equal width */
+    grid-gap: 20px;
+    padding: 30px;
+  }
+  
+  /* Individual Images for Glendalough */
+  #glendaloughPics .image-grid img {
+    width: 100%; /* Fill the grid cell */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+  }
+  #glendaloughPics .image-grid img:last-child {
+    grid-column: span 2; /* Adjust the span value to fit your layout */
+  /* Hover Effect for Glendalough Images */
+  }
+  #glendaloughPics .image-grid img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Image Grid Container for Kilkenny */
+  #kilkennyPics .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr)); /* 2 columns with equal width */
+    grid-gap: 20px;
+    padding: 30px;
+  }
+  
+  /* Individual Images for Kilkenny */
+  #kilkennyPics .image-grid img {
+    width: 100%; /* Fill the grid cell */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Hover Effect for Kilkenny Images */
+  #kilkennyPics .image-grid img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Mobile Responsive */
+  @media screen and (max-width: 600px) {
+    #glendaloughPics .image-grid,
+    #kilkennyPics .image-grid {
+      grid-template-columns: 1fr; /* Single column layout on small screens */
+    }
+  }
