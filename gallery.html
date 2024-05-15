@@ -6,11 +6,12 @@
     <!-- https://www.favicon.cc/ -->
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <title>Exploring Ireland: A Study Abroad Journey</title>
+    <link rel = "stylesheet" href="dist/css/lightbox.css">
+
     <link rel = "stylesheet" href="css/style.css">
 </head>
 <body>
 
-<a id = "skip" href = "#main">Skip to Main Content</a>
 
 <header>
     <h1>Exploring Ireland: A Study Abroad Journey</h1>
@@ -24,11 +25,20 @@
         <a class = "current"href="gallery.html">Gallery</a>
     </nav>
 </header>
-<div class="image-grid">
-    <img src="images/napTime.jpeg" alt="a herd of deer sleeping under a tree" width="200">
-    <img src="images/path.jpeg" alt="A walkway through nature shaded by trees" width="200">
-    <img src="images/fort.jpeg" alt="an old fort under construction" width="200">
-    <img src="images/blueBridge.jpeg" alt="A blue brige crossing a river in downtown Dublin" width="200">
-    <img src="images/blud.jpeg" alt="A deer standing in a feild" width="200">
+<main>
+<div class="image-grid"> 
+    <a href="images/napTime.jpeg" data-lightbox="gallery" data-title="My caption"><img src="images/napTime.jpeg" alt="a herd of deer sleeping under a tree" width="200"></a>
+    <a href="images/path.jpeg" data-lightbox="gallery" data-title="My caption"> <img src="images/path.jpeg" alt="A walkway through nature shaded by trees" width="200"></a>
+    <a href="images/fort.jpeg" data-lightbox="gallery" data-title="My caption"> <img src="images/fort.jpeg" alt="an old fort under construction" width="200"></a>
+    <a href="images/blueBridge.jpeg" data-lightbox="gallery" data-title="My caption"> <img src="images/blueBridge.jpeg" alt="A blue brige crossing a river in downtown Dublin" width="200"></a>
+    <a href="images/blud.jpeg" data-lightbox="gallery" data-title="My caption"><img src="images/blud.jpeg" alt="A deer standing in a feild" width="200"></a>
+
 
 </div>
+
+</main>
+<script src="dist/js/lightbox-plus-jquery.js"></script>
+
+</body>
+</html>
+
