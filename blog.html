@@ -6,6 +6,7 @@
     <!-- https://www.favicon.cc/ -->
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <title>Exploring Ireland: A Study Abroad Journey</title>
+    <link rel = "stylesheet" href="css/accordion.css">
     <link rel = "stylesheet" href="css/style.css">
 
 </head>
@@ -26,14 +27,10 @@
 </header>
 
 <main id = "main">
-    <h2>Blog</h2>
-
+    <h2 id = "blogT">A Blog of My Journey</h2>
     <article>
-        <h3>Exploring Dublin: A City of History and Culture</h3>
-        <time datetime="2024-05-07">May 7, 2024</time>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor erat non dui eleifend, sit amet pharetra orci bibendum. Proin scelerisque, enim vel porta accumsan, ex justo tempor nulla, ac fermentum ex nisi vel risus.</p>
-    </article>
-    <article>
+        <button class="accordion">May 8, 2024</button>
+        <div class="panel">
         <h3>First class: Remembering how to code/stopping to smell the flowers </h3>
         <time datetime="2024-05-09">May 8, 2024</time>
         <p>Most of the first class was filled with confusion. We learned how to apply the inspect element to our own pages, which was cool because I used that a lot when I was younger. Then, at the end of class, I struggled to use Github, but luckily, I was able to figure it out. </p>
@@ -46,12 +43,13 @@
         <img src="images/fort.jpeg" alt="A very old fort under construction a feild" width="200">
 
 
-
+    </div>
     </article>
     
     <article>
+        <button class="accordion">May 9, 2024</button>
+        <div class="panel">
         <h3>Guest Lecture with Dr David Williams: solid day of work</h3>
-        <time datetime="2024-05-09">May 9, 2024</time>
         <p>
             For our class in the morning, we got a lot deeper into adding images to our HTML websites. At first, when we added the images in, they just themselves and auto-sorted into the page. We eventually were taught how to use image grids to methodically place images wherever we wanted and format them all relative to each other. Overall, I still don't think I understand image grids or inspection yet. 
         </p>
@@ -61,27 +59,55 @@
         </p>
     </article>
     <article>
-        <h3>Day trip to Glendalough/Kilkenny </h3>
-        <time datetime="2024-05-09">May 13, 2024</time>
+        <button class="accordion">May 10, 2024</button>
+        <div class="panel">
+        <h3>EPIC museum </h3>
         <p>
-            Wow!!! Lucky you. I made a whole page just for this trip, how about you check out this link: 
+            The only real thing of note today was visiting the EPIC museum, which was themed around the famine and the diaspora that it caused. Overall, I  didnot like the museum very much. There were no artifacts; they just had screens instead. The screens and content they did have were overwhelming and uninteresting. If we were looking at the museum from an accessibility perspective, it did pretty awful at that, too. So far it was my least favorite activity on the trip. 
+
         </p>
+        <img src="images/EPICboat.jpeg" alt="A dumb thing about boats 
+        " width="200">
+        <img src="images/EPICdumbguy.jpeg" alt="I hate this dude" width="200">
+        <img src="images/EPICgoat.jpeg" alt="A informatic about Tom Braidy" width="200">
+        <img src="images/EPICactualgoat.jpeg" alt="A Cranberries album cover" width="200">
+
+    </div>
+
     </article>
     <article>
+        <button class="accordion">May 13, 2024</button>
+        <div class="panel">
+        <h3>Day trip to Glendalough/Kilkenny </h3>
+        <p>
+            Wow!!! Lucky you. I made a whole page just for this trip, how about you check out this link: <a href="https://benj4min22.github.io/dublin/kilkenny.html">Glendalough/Kilkenny</a>
+ 
+        </p>
+    </div>
+
+    </article>
+    <article>
+        <button class="accordion">May 13, 2024</button>
+        <div class="panel">
         <h3>Visit to the National disability authority </h3>
-        <time datetime="2024-05-09">May 13, 2024</time>
         <p>
             On this day, we took taxis to the “nice part of town” where the main office of the national disability authority is. They are the government agency that monitors all private and government agencies to ensure they sufficiently follow accessibility guidelines. We had a presentation with one of the lead web accessibility managers. First, we got a history lesson on how accessibility rights started in the US and how Europe followed after them, however quite different the philosophy are. Finally, in the end, we got to hear how the NDA monitors websites in Ireland to enforce accessible website practices. Altogether, it was very informative and quite cool that we got to meet, which helped us learn why we are doing what we are doing in this class.</p>
+        </div>
+
     </article>
     <article>
+        <button class="accordion">May 14, 2024</button>
+        <div class="panel">
         <h3>Visit to the National History Museum</h3>
-        <time datetime="2024-05-09">May 14, 2024</time>
         <p>
             N/A</p>
+        </div>
+
     </article>
     <article>
+        <button class="accordion">May 14, 2024</button>
+        <div class="panel">
         <h3>Trip to Northern Ierland: An Unfinished Revolution</h3>
-        <time datetime="2024-05-09">May 14, 2024</time>
         <p>
         <p>
             I did a 90 euro day trip tour to Northern Ireland, which sounds a little expensive, but we got to see many things, and we did not have to worry about coordinating travel; all we had to do was get on the bus in the morning. The first stop was in Belfast, where we could go to the Titanic museum or a black cab city tour. I picked the cab tour because I wanted to learn more about the troubles. I was completely blown away by the tour and the city; there was a massive wall that goes down the middle of the city separating the 2 groups of people. We got to go on both sides of the wall and see how different it was with the street art condemning the actions of the other side while mourning their own losses.
@@ -95,16 +121,38 @@
         <img src="images/watchTower.jpeg" alt="A castle tower overlooking the sea." width="200">
         <img src="images/giantsShoes.jpeg" alt="Senic veiw of the sea from Giants Causeway" width="200">
         <img src="images/pondering.jpeg" alt="Ben looking off into the ocean at Giants Causeway" width="200">
+    </div>
+
     </article>
     <article>
+        <button class="accordion">May 15, 2024</button>
+        <div class="panel">
         <h3>Visit to the Microsoft European Headquarters: A fancy tech building.
         </h3>
-        <time datetime="2024-05-09">May 15, 2024</time>
         <p>
             Originally, the plan was for us to go to some tiny museum today, but during class, the plans changed, and we were on for our much-anticipated Microsoft headquarters tour. It was a pain to get there, and we seemed to hit every red light in the city, but we eventually arrived only 6 minutes late for our tour. We saw all four floors of the massive building with some design similar to the UM Kinesiology building. Honestly, it was all pretty typical tech company-building stuff, but it was nice nonetheless. I think the actual desks and workspaces seemed like the nicest part of the building to me. After the tour, we gave a presentation about AI. It was generic, but it helped reassure me that I had picked the right career path. I am quite grateful for the opportunity to be able to see an actual workspace for a company like that and for being able to meet people that work there; however, I don't think I got an internship out fo thin air. 
-            p>
+        </p>
+        <img src="images/microSoft.jpeg" alt="The Microsoft logo outside the Microsoft Ierland headquarters." width="200">
+        <img src="images/insideTheSoft.jpeg" alt="The open layout on the Inside of the Microsoft building." width="200">
+        </div>
+
     </article>
     <!-- Add more articles for each blog post -->
+    <article>
+        <button class="accordion">May 16, 2024</button>
+        <div class="panel">
+        <h3>Touring the Docklands
+        </h3>
+        <p>
+            Today's activity was to go to the riverside area in Dublin and learn how Ireland has evolved over a relatively short period. We have learned all about how the world changes over time and how new things crop up, but what is unique is just how fast Ireland and Dublin specifically moved from a third-world country to a first-world country and then what struggles it faced in an aggressive initial market. What stood out to me is how many ups and downs the country faced as it saw significant success with lower taxes and received support from the EU, but it seemed like things came crashing down as fast as they were built up. The story ended off with learning about the current housing crisis in Dublin, which had a lot of parallels to America. The Docklands tour was not what I had expected, but I was pleasantly surprised.
+        </p>
+        <img src="images/redDoor.jpeg" alt="A brick residential building with a red door is across from the river downtown." width="200">
+        <img src="images/moatApts.jpeg" alt="The first apartment buildings in Dublin with a water moat going around it." width="200">
+        </div>
+
+    </article>
+        
 </main>
+<script src="js/accordion.js"></script>
 </body>
 </html>

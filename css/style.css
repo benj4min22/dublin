@@ -38,6 +38,7 @@ header {
 
 header h1 {
     margin: 0 0 20px; /* Adds margin to the bottom of the h1 for spacing */
+    text-align: center;
 }
 
 nav {
@@ -154,6 +155,9 @@ nav a.active {
   /* Hover Effect for Kilkenny Images */
   #kilkennyPics .image-grid img:hover {
     transform: scale(1.05);
+  }
+  #blogT{
+    text-align: center;
   }
   
   /* Mobile Responsive */
