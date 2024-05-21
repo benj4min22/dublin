@@ -169,7 +169,7 @@ nav a.active {
   
   /* Individual Images for Kilkenny */
   #GalwayPics .image-grid img {
-    width: 100%; /* Fill the grid cell */
+    width: 75%; /* Fill the grid cell */
     height: auto;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
@@ -221,3 +221,139 @@ nav a.active {
       grid-template-columns: 1fr; /* Single column layout on small screens */
     }
   }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* This ensures padding doesn't affect the overall width */
+  }
+  
+  /* Styling the gallery container */
+  .image-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allows images to wrap to the next line */
+    justify-content: center; /* Centers the images horizontally */
+    gap: 10px; /* Adds space between images */
+    padding: 10px; /* Adds padding within the container */
+  }
+  
+  /* Styling each anchor tag containing the images */
+  .image-grid a {
+    display: block; /* Convert links to block elements for better control */
+    overflow: hidden; /* Ensures the content doesn't overflow */
+    position: relative; /* For potential absolute positioning of captions or overlays */
+    border-radius: 5px; /* Optional: round corners for aesthetics */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow around images */
+  }
+  
+  /* Styling the images themselves */
+  .image-grid img {
+    width: 50%; /* Forces images to take the full width of their parent anchor tags */
+    height: auto; /* Maintains aspect ratio */
+    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+  }
+  
+  /* Adding a zoom effect on hover */
+  .image-grid img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Adding a basic caption style if required */
+  .image-grid a::after {
+    content: attr(data-title); /* Uses the data-title attribute for content */
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 14px;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    border-radius: 3px;
+    display: none; /* Hide the caption by default */
+  }
+  
+  /* Show the caption on image hover */
+  .image-grid a:hover::after {
+    display: block;
+  }
+  
+  /* Responsive behaviour for smaller screens */
+  @media (max-width: 600px) {
+    .image-grid a {
+      width: calc(50% - 5px); /* Adjust the width for a two-column layout on small screens */
+    }
+  }
+  /* Main Container */
+#main {
+  width: 80%;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Section Titles */
+#main h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+/* Section Styling */
+#about, #gallery {
+  margin-bottom: 40px;
+}
+
+/* Image Gallery Grid */
+#benPics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-evenly;
+}
+
+/* Each figure within the gallery grid */
+#benPics figure {
+  width: calc(33.333% - 10px);
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+}
+
+/* Images within each figure */
+#benPics img {
+  width: 100%;
+  height: auto;
+  display: block; /* Ensures there is no space between figcaption and image */
+}
+
+/* Figcaptions with a bit of padding for readability */
+#benPics figcaption {
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+
+/* Responsive Images Rules */
+@media (max-width: 1200px) {
+  #benPics figure {
+    width: calc(50% - 10px); /* 2 images per row */
+  }
+}
+
+@media (max-width: 768px) {
+  #benPics figure {
+    width: 100%; /* 1 image per row */
+  }
+}
+
+/* Adding additional style elements such as page background color, text alignment, etc */
+body {
+  background-color: #ecf0f1;
+  line-height: 1.6;
+}
+
+/* Paragraph styling for better readability */
+p {
+  margin-bottom: 15px;
+}
