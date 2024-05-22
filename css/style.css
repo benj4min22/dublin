@@ -115,6 +115,7 @@ nav a.active {
     grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr)); /* 2 columns with equal width */
     grid-gap: 20px;
     padding: 30px;
+    justify-content: space-around;
   }
   
   /* Individual Images for Glendalough */
@@ -170,7 +171,7 @@ nav a.active {
   /* Individual Images for Kilkenny */
   #GalwayPics .image-grid img {
     width: 75%; /* Fill the grid cell */
-    height: auto;
+    margin: auto;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out;
@@ -298,6 +299,7 @@ nav a.active {
 /* Section Styling */
 #about, #gallery {
   margin-bottom: 40px;
+  padding: 6px;
 }
 
 /* Image Gallery Grid */
@@ -356,4 +358,7 @@ body {
 /* Paragraph styling for better readability */
 p {
   margin-bottom: 15px;
+}
+#main{
+  padding: 5px;
 }
