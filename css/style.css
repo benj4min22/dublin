@@ -90,19 +90,8 @@ nav a.active {
         box-sizing: border-box; /* Includes padding in the width calculation */
     }
 }
-.image-grid{
-    display: grid; 
-    grid-template-columns:1fr 1fr ; 
-    grid-column-start: 1;
-    grid-column-end: -1;}
-@media screen and (min-width: 760px) {
-    .image-grid{
-        grid-template-columns: 45% 45%;
-        grid-gap: 20px;
-        padding: 30px;
-    }
-    
-}
+
+
 .current{
     font-weight: 750;
     color: rgb(45, 43, 43);
@@ -112,7 +101,6 @@ nav a.active {
 /* Image Grid Container for Glendalough */
 #glendaloughPics .image-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr)); /* 2 columns with equal width */
     grid-gap: 20px;
     padding: 30px;
     justify-content: space-around;
@@ -248,7 +236,7 @@ nav a.active {
   
   /* Styling the images themselves */
   .image-grid img {
-    width: 50%; /* Forces images to take the full width of their parent anchor tags */
+    width: 100%; /* Forces images to take the full width of their parent anchor tags */
     height: auto; /* Maintains aspect ratio */
     transition: transform 0.3s ease; /* Smooth transition for zoom effect */
   }
